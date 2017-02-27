@@ -1,0 +1,127 @@
+@charset 'utf-8';
+@import './variables.less';
+html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Microsoft YaHei;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: @body-bg;
+    color: @gray;
+    font-size: @font-size-base;
+    margin: 0;
+    overflow: auto;
+}
+
+
+/*
+* Applies to Google Chrome
+* 1. Resets the scroll bar of the page
+*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.03);
+    width: 10px;
+    -webkit-border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #b5c2c9;
+    -webkit-border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #b5c2c9;
+    -webkit-border-radius: 4px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-weight: normal;
+    font-style: normal;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: transparent!important;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none;
+    background-color: transparent!important;
+}
+
+
+/*
+* Applies to Google Chrome
+* 1. Resets the button of the page
+*/
+
+[class^="btn-"] {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    height: 28px;
+    line-height: 28px;
+    border-radius: @border-radius-base;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    text-align: center;
+    font-size: @font-size-small;
+}
+
+[class^="btn-"]:hover,
+[class^="btn-"].chk {
+    color: @body-bg;
+    background: @base-light;
+}
+
+[class^='btn-sm-'] {
+    width: 52px;
+    font-size: @font-size-small!important;
+}
+
+[class^='btn-md-'] {
+    width: 64px;
+}
+
+[class^='btn-xl-'] {
+    width: 80px;
+}
+
+[class^='btn-lg-'] {
+    width: 102px;
+}
+
+[class^='btn-max-'] {
+    width: auto;
+    padding: 0 @padding-horizontal!important;
+}
+
+[class*='def'] {
+    color: @btn-def-color;
+    background: @btn-def-bg;
+}
+
+[class*='imp'] {
+    color: @body-bg;
+    background: @base-high-light;
+}
+
+[class^="btn-"]:disabled,
+[class^="btn-"]:disabled {
+    color: @btn-dis-color;
+    background: @btn-dis-bg;
+    cursor: no-drop;
+}

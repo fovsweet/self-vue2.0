@@ -1,0 +1,17 @@
+# Created by .ignore support plugin (hsz.mobi)
+web/*/dist
+dist
+
+#node 依赖包
+node_modules
+
+#生成的文件
+views
+
+#调试日志
+npm-debug.log
+
+#idea/webstorm自带idea文件
+.idea
+
+proxy

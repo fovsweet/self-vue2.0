@@ -1,0 +1,94 @@
+<script>
+import list from 'c/list'
+export default {
+	components:{
+		list
+	},
+	data(){
+		return{
+			listconfig:{
+				btn:{
+					left:{
+						icon:'',
+						name:'左按钮'
+					},
+					right:{
+						icon:'',
+						name:'右按钮'
+					}
+				},
+				tab:[
+					{
+						name:'标签一',
+						tips:true
+					},
+					{
+						name:'标签二',
+						tips:true
+					},
+					{
+						name:'标签三',
+						tips:true
+					},
+				],
+				body:[
+					[
+						{
+							code:'111',
+							firstTitle:'一级菜单文本',
+							secContent:'一级菜单二级文本',
+							thrContent:'一级菜单三级文本',
+							rightContent:'110',
+							secList:[
+								{
+									firstTitle:'二级菜单文本',
+									secContent:'二级菜单二级文本',
+									thrContent:'二级菜单三级文本',
+									rightContent:'120',
+								},
+								{
+									firstTitle:'二级菜单文本',
+									secContent:'二级菜单二级文本',
+									thrContent:'二级菜单三级文本',
+									rightContent:'130',
+								},
+							]
+						},
+						{
+							code:'222',
+							firstTitle:'2一级菜单文本',
+							secContent:'2一级菜单二级文本',
+							thrContent:'2一级菜单三级文本',
+							rightContent:'210',
+							secList:[
+								{
+									firstTitle:'2二级菜单文本',
+									secContent:'2二级菜单二级文本',
+									thrContent:'2二级菜单三级文本',
+									rightContent:'220',
+								},
+								{
+									firstTitle:'2二级菜单文本',
+									secContent:'2二级菜单二级文本',
+									thrContent:'2二级菜单三级文本',
+									rightContent:'230',
+								},
+							]
+						},
+					]
+				]
+			}
+		}
+	},
+	methods:{
+		tab(item,index){
+			console.log(item)
+			console.log(index)
+		}
+	}
+}
+</script>
+
+<template>
+<list :config='listconfig' @changetab='tab'></list>
+</template>

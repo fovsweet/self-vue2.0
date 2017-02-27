@@ -1,0 +1,60 @@
+/**
+ * Created by SkyeTang on 2017/1/10.
+ */
+
+@charset 'utf-8';
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+blockquote,
+ul,
+li,
+ol,
+dl,
+dd {
+    margin: 0;
+    padding: 0
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+address,
+em {
+    font-style: normal;
+}
+
+small {
+    font-size: 100%
+}
+
+img {
+    border: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+textarea {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
